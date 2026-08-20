@@ -15,19 +15,22 @@ class ProductRow(BaseModel):
 
 
 class ClassificationResult(BaseModel):
-    classpath: str
-    confidence: float = Field(ge=0.0, le=1.0)
+    classpath: Optional[str] = None
+    confidence: float = Field(default=0.0, ge=0.0, le=1.0)
     alternative_candidates: List[str] = Field(default_factory=list)
     reasoning: str = ""
     needs_review: bool = False
+    validation_error: Optional[str] = None
 
 
 class AttributeResult(BaseModel):
     attribute: str
     value: str
-    confidence: float = Field(ge=0.0, le=1.0)
+    confidence: float = Field(default=0.0, ge=0.0, le=1.0)
     needs_unit_normalization: bool = False
     raw_text_span: str = ""
+    needs_review: bool = False
+    validation_error: Optional[str] = None
 
 
 class ProductEnrichmentPart2(BaseModel):
