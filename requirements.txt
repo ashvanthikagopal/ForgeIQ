@@ -1,0 +1,10 @@
+pandas
+openpyxl
+python-docx
+pydantic
+pytest
+google-genai
+python-dotenv
+fastapi
+uvicorn
+python-multipart

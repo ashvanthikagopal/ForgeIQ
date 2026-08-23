@@ -1,0 +1,62 @@
+import api, {
+  getHealth,
+  runPipeline,
+  getPipelineStatus,
+  getProducts,
+  getProduct,
+  getReviewProducts,
+  getQAReviews,
+  getMetrics,
+  getQASummary,
+  getPipelineResults,
+  getClassification,
+  getAttributes,
+  getNormalization,
+  getDescriptions,
+  getEnrichment,
+  approveReview,
+  rejectReview,
+  downloadResults
+} from '../services/api';
+
+export {
+  getHealth,
+  runPipeline,
+  getPipelineStatus,
+  getProducts,
+  getProduct,
+  getReviewProducts,
+  getQAReviews,
+  getMetrics,
+  getQASummary,
+  getPipelineResults,
+  getClassification,
+  getAttributes,
+  getNormalization,
+  getDescriptions,
+  getEnrichment,
+  approveReview,
+  rejectReview,
+  downloadResults
+};
+
+export default {
+  getHealth,
+  runPipeline,
+  getPipelineStatus,
+  getProducts,
+  getProduct,
+  getReviewProducts,
+  getQAReviews,
+  getMetrics,
+  getQASummary,
+  getPipelineResults,
+  getClassification,
+  getAttributes,
+  getNormalization,
+  getDescriptions,
+  getEnrichment,
+  approveReview,
+  rejectReview,
+  downloadResults
+};
