@@ -35,12 +35,10 @@ app.add_middleware(
 @app.get("/")
 def root():
     return {
-        "status": "ok",
-        "service": "ForgeIQ Backend API",
-        "documentation": "http://127.0.0.1:8000/docs",
-        "health_check": "http://127.0.0.1:8000/api/health",
-        "frontend": "http://localhost:5173"
+        "message": "ForgeIQ API is running",
+        "status": "healthy"
     }
+
 
 # Global State
 pipeline_state = {
