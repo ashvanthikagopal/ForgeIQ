@@ -32,6 +32,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return {
+        "status": "ok",
+        "service": "ForgeIQ Backend API",
+        "documentation": "http://127.0.0.1:8000/docs",
+        "health_check": "http://127.0.0.1:8000/api/health",
+        "frontend": "http://localhost:5173"
+    }
+
 # Global State
 pipeline_state = {
     "status": "idle",  # idle, running, completed, failed
